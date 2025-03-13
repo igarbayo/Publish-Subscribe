@@ -1,0 +1,11 @@
+* {
+    -fx--highlight: #32E0C4;
+    -fx--white: #EEEEEE;
+    -fx--black: #222831;
+    -fx--dark-gray: #393E46;
+    -fx--light-gray: #6E757F;
+    -fx--very-light-gray: #CECECE;
+    -fx--dark-blue: #36465F;
+    -fx--neutral-blue: #48648A;
+    -fx--error-color: #FF6B6B;
+}

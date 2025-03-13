@@ -1,0 +1,13 @@
+@import url("colors.css");
+
+.button {
+    -fx-border-radius: 5;
+    -fx-background-color: -fx--dark-blue;
+    -fx-text-fill: -fx--white;
+}
+
+.button:hover, .button:focused {
+    -fx-background-color: -fx--highlight;
+    -fx-text-fill: -fx--black;
+    -fx-cursor: hand;
+}

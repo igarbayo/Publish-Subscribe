@@ -1,0 +1,47 @@
+@import url("colors.css");
+
+.menu-bar {
+    -fx-background-color: -fx--black;
+    -fx-text-fill: -fx--white;
+    -fx-font-family: serif;
+    -fx-font-size: 18;
+}
+
+.relleno {
+    -fx-background-color: -fx--black;
+}
+
+.menu .label {
+    -fx-text-fill: -fx--white;
+}
+
+.menu:hover {
+    -fx-background-color: -fx--highlight;
+    -fx-cursor: hand;
+}
+.menu:showing {
+    -fx-background-color: -fx--highlight;
+}
+.menu:hover .label, .menu:showing .label {
+    -fx-text-fill: -fx--black;
+}
+
+.menu:hover .menu-item .label {
+    -fx-text-fill: -fx--white;
+}
+.menu-item {
+    -fx-background-color: -fx--black;
+}
+
+.menu-item:hover, .menu-item:focused {
+    -fx-background-color: -fx--highlight;
+    -fx-cursor: hand;
+}
+.menu-item:hover .label {
+    -fx-text-fill: -fx--black;
+}
+
+.context-menu {
+    -fx-background-color: -fx--black;
+    -fx-padding: 0;
+}

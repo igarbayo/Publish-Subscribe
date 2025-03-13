@@ -1,0 +1,23 @@
+@import url("colors.css");
+
+.slider {
+    -fx-background-color: transparent;
+    -fx-font-size: 18;
+}
+
+.slider .track {
+    -fx-background-color: -fx--black;
+}
+
+.slider .thumb {
+    -fx-background-color: -fx--white;
+}
+.slider .thumb:hover, .slider:focused .thumb, .slider:selected .thumb {
+    -fx-background-color: -fx--highlight;
+    -fx-cursor: hand;
+}
+
+/* Ticks */
+.slider .axis {
+    -fx-tick-label-fill: -fx--white;
+}

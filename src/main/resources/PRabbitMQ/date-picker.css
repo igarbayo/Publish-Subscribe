@@ -1,0 +1,101 @@
+@import url("colors.css");
+
+.date-picker {
+    -fx-background-color: transparent;
+}
+
+/* Icono del calendario */
+.date-picker .arrow-button {
+    -fx-background-color: -fx--dark-gray;
+    -fx-background-radius: 0;
+    -fx-border-color: -fx--highlight;
+    -fx-border-radius: 3;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: -fx--white;
+}
+.date-picker .arrow-button:hover {
+    -fx-background-color: -fx--highlight;
+    -fx-background-radius: 3;
+    -fx-border-color: transparent;
+}
+
+/* Campo de texto */
+.date-picker .text-field {
+    -fx-background-color: -fx--light-gray;
+    -fx-text-fill: -fx--white;
+    -fx-background-radius: 3;
+}
+.date-picker .text-field:focused {
+    -fx-border-color: -fx--highlight;
+    -fx-border-width: 3;
+    -fx-border-radius: 3;
+}
+
+
+/* Celdas con los días dentro del desplegable */
+.date-picker .cell {
+    -fx-background-color: -fx--light-gray;
+    -fx-text-fill: -fx--white;
+    -fx-border-color: -fx--white;
+}
+.date-picker .cell:hover, .date-picker .cell:focused {
+    -fx-background-color: -fx--highlight;
+    -fx-text-fill: -fx--black;
+    -fx-cursor: hand;
+}
+
+/* Día seleccionado en el calendario desplegable */
+.date-picker .selected, .date-picker .selected:focused {
+    -fx-background-color: -fx--highlight;
+    -fx-text-fill: -fx--black;
+}
+
+/* Calendario desplegable */
+.date-picker-popup {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+/* Barra con mes y año */
+.date-picker-popup .month-year-pane {
+    -fx-background-color: -fx--black;
+}
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: -fx--white;
+}
+/* Flechas */
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: -fx--white;
+}
+.date-picker-popup .spinner .button {
+    -fx-background-color: -fx--black;
+}
+
+/* Lateral con la semana */
+.date-picker-popup .week-number-cell, .date-picker-popup .week-number-cell:hover {
+    -fx-background-color: -fx--black;
+    -fx-text-fill: -fx--white;
+    -fx-cursor: default;
+}
+
+/* Nombres de los días de la semana */
+.date-picker-popup .day-name-cell, .date-picker-popup .day-name-cell:hover {
+    -fx-background-color: -fx--black;
+    -fx-border-color: -fx--white;
+    -fx-border-width: 1;
+    -fx-text-fill: -fx--white;
+    -fx-cursor: default;
+}
+
+/* Fondo de la línea con los nombres de los días */
+.date-picker-popup .calendar-grid {
+    -fx-background-color: -fx--black;
+}
+
+/* Oscurecer las celdas que no son de este mes */
+.date-picker-popup .previous-month,
+.date-picker-popup .next-month {
+    -fx-background-color: -fx--dark-gray;
+}

@@ -1,0 +1,68 @@
+@import url("colors.css");
+
+.text-area {
+    -fx-text-fill: -fx--white;
+    -fx-background-color: transparent;
+    -fx-background-radius: 3;
+    -fx-highlight-fill: -fx--highlight;
+    -fx-highlight-text-fill: -fx--black;
+}
+
+.text-area .content {
+    -fx-background-color: -fx--light-gray;
+    -fx-background-radius: 3;
+    -fx-border-width: 0;
+}
+.text-area:focused .content {
+    -fx-border-color: -fx--highlight;
+    -fx-border-radius: 3;
+    -fx-border-width: 3;
+}
+/* Para quitar un fondo blanco feo */
+.text-area .viewport {
+    -fx-background-color: transparent;
+}
+
+
+/* Barra de desplazamiento */
+.text-area .scroll-bar {
+    -fx-background-color: -fx--dark-gray;
+}
+
+.text-area .scroll-bar .thumb {
+    -fx-background-color: -fx--highlight;
+}
+.text-area .scroll-bar .track {
+    -fx-background-color: -fx--dark-gray;
+}
+
+.text-area .scroll-pane .corner, .text-area .scroll-pane .filler {
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-bar .increment-button,
+.text-area .scroll-bar .decrement-button {
+    -fx-background-color: -fx--dark-gray;
+    -fx-background-insets: 0;
+}
+
+.text-area .scroll-bar .increment-button:hover,
+.text-area .scroll-bar .increment-button:focused,
+.text-area .scroll-bar .decrement-button:hover,
+.text-area .scroll-bar .decrement-button:focused {
+    -fx-background-color: -fx--highlight;
+    -fx-background-insets: 0;
+}
+
+.text-area .scroll-bar .increment-arrow,
+.text-area .scroll-bar .decrement-arrow {
+    -fx-background-color: -fx--white;
+}
+
+.text-area .scroll-bar .increment-button:hover .increment-arrow,
+.text-area .scroll-bar .decrement-button:hover .decrement-arrow,
+.text-area .scroll-bar .increment-button:focused .increment-arrow,
+.text-area .scroll-bar .decrement-button:focused .decrement-arrow {
+    -fx-background-color: -fx--black;
+}

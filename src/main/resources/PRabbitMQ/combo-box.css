@@ -1,0 +1,88 @@
+@import url("colors.css");
+
+.combo-box {
+    -fx-background-color: -fx--light-gray;
+    -fx-text-fill: -fx--white;
+    -fx-border-radius: 5;
+}
+
+.combo-box:hover, .combo-box:focused {
+    -fx-border-color: -fx--highlight;
+}
+
+.combo-box:focused .list-cell:filled:selected {
+    -fx-background-color: -fx--light-gray;
+    -fx-text-fill: -fx--white;
+}
+
+.combo-box .list-cell:filled:selected {
+    -fx-background-color: -fx--light-gray;
+    -fx-text-fill: -fx--white;
+}
+
+.combo-box .list-view {
+    -fx-background-color: -fx--dark-gray;
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view .corner {
+    -fx-background-color: transparent;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: -fx--light-gray;
+    -fx-padding: 3 0 2 7;
+    -fx-text-fill: -fx--white;
+}
+
+.combo-box .list-cell:hover, .combo-box .list-cell:focused {
+    -fx-background-color: -fx--highlight;
+    -fx-text-fill: -fx--black;
+}
+
+.combo-box .scroll-bar {
+    -fx-background-color: -fx--dark-gray;
+}
+
+.combo-box .scroll-bar .thumb {
+    -fx-background-color: -fx--highlight;
+}
+.combo-box .scroll-bar .track {
+    -fx-background-color: -fx--dark-gray;
+}
+
+.combo-box .scroll-pane .corner, .combo-box .scroll-pane .filler {
+    -fx-background-color: transparent;
+}
+
+
+.combo-box .scroll-bar .increment-button,
+.combo-box .scroll-bar .decrement-button {
+    -fx-background-color: -fx--dark-gray;
+    -fx-background-insets: 0;
+}
+
+.combo-box .scroll-bar .increment-button:hover,
+.combo-box .scroll-bar .increment-button:focused,
+.combo-box .scroll-bar .decrement-button:hover,
+.combo-box .scroll-bar .decrement-button:focused {
+    -fx-background-color: -fx--highlight;
+    -fx-background-insets: 0;
+}
+
+.combo-box .scroll-bar .increment-arrow,
+.combo-box .scroll-bar .decrement-arrow {
+    -fx-background-color: -fx--white;
+}
+
+.combo-box .scroll-bar .increment-button:hover .increment-arrow,
+.combo-box .scroll-bar .decrement-button:hover .decrement-arrow,
+.combo-box .scroll-bar .increment-button:focused .increment-arrow,
+.combo-box .scroll-bar .decrement-button:focused .decrement-arrow {
+    -fx-background-color: -fx--black;
+}

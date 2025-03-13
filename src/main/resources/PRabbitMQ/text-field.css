@@ -1,0 +1,26 @@
+@import url("colors.css");
+
+.text-field {
+    -fx-background-radius: 3;
+    -fx-background-color: -fx--light-gray;
+    -fx-text-fill: -fx--white;
+    -fx-highlight-fill: -fx--highlight;
+    -fx-highlight-text-fill: -fx--black;
+}
+.text-field:focused {
+    -fx-border-color: -fx--highlight;
+    -fx-border-radius: 3;
+    -fx-border-width: 3;
+}
+
+.error-text-field {
+    -fx-background-color: -fx--light-gray;
+    -fx-text-fill: -fx--white;
+    -fx-border-color: -fx--error-color;
+    -fx-border-radius: 3;
+}
+.error-text-field:focused {
+    -fx-border-color: -fx--error-color;
+    -fx-border-radius: 3;
+    -fx-border-width: 3;
+}

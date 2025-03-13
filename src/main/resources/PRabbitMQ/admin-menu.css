@@ -1,0 +1,29 @@
+@import url("colors.css");
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-border-width: 0;
+    -fx-padding: 0;
+    -fx-alignment: center;
+}
+.list-cell:odd {
+    -fx-background-color: -fx--white;
+}
+
+.list-cell:even {
+    -fx-background-color: -fx--very-light-gray;
+}
+
+.list-cell .button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-text-fill: -fx--black;
+}
+
+.list-cell .button:hover {
+    -fx-cursor: hand;
+}
